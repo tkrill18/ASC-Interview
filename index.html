@@ -1,31 +1,97 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>My test page</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Rubik|Vollkorn" rel="stylesheet">
-        <link href="bootstrap/bootstrap-theme.css" rel="stylesheet" type="text/css">
-        <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
-        <link href="bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <h1>Visit the Moon</h1>
-        <img src="images/near.jpg" alt="The Moon">
-        <p>This is a single paragraph</p>
-        <p>The moon is</p>
-            <ul>
-                <li>an astronomical body that orbits the planet Earth</li>
-                <li>is Earth's only permanent natural satellite</li>
-                <li>the fifth-largest natural satellite in the Solar System</li>
-            </ul>
-        <p> You can read the full article on
-            <a href="https://en.wikipedia.org/wiki/Moon">Wikipedia</a>
-        here.</p>
-        <button>Change user</button>
-        <script src="scripts/main.js"></script>
-    </body>
+<html  lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thomas Krill</title>
+
+	<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto+Mono|Rubik" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="lib/styles/main.css" rel="stylesheet">
+
+	<!-- Makes responsive to mobile devices. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="full">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<img src="assets/tk-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="TK">
+			</a>
+		</div>
+		<div class="container-fluid">
+  			<ul class="nav navbar-nav">
+				<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#about-me">About Me</a></li>
+				<li><a data-toggle="tab" href="#tech-skills">Technical Skills</a></li>
+				<li><a data-toggle="tab" href="#contact">Contact</a></li>
+  			</ul>
+		</div>
+	</nav>
+
+	<div class="tab-content">
+
+  		<div id="home" class="tab-pane fade in active">
+			<div class="jumbotron title">
+				<div class="container">
+					<h1>Thomas Krill</h1>
+					<img src="assets/tk-logo.svg" alt="TK">
+				</div>
+			</div>
+  		</div>
+
+	  	<div id="about-me" class="tab-pane fade">
+			<div class="jumbotron">
+		    	<div class="row">
+					<div class="col-sm-4 text-center">
+						<div class="container">
+							<type="button" class="btn btn-default btn-block" onclick="myFunction()">Education</button>
+						</div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="container">
+							<type="button" class="btn btn-default btn-block">Work Experience</button>
+						</div>
+					</div>
+					<div class="col-sm-4 text-center">
+						<div class="container">
+							<type="button" class="btn btn-default btn-block">Activities</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 text-center">
+						<div class="container edu">
+							<img src="assets/pr-logo.svg" class="img-responsive" alt="Pine-Richland High School">
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 text-center">
+						<div class="container">
+							<type="button" class="btn btn-default btn-block">ND</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	  	</div>
+
+	</div>
+
+
+
+	<script src="lib/js/jquery-3.1.0.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="lib/scripts/main.js"></script>
+
+</body>
+
 </html>

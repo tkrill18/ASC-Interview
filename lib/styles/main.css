@@ -1,0 +1,53 @@
+.full {
+    background: url(../../assets/sunset.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    padding-top: 65px;
+}
+
+.jumbotron {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1 {
+    color: white;
+    text-shadow: 0 0 12px black, 0 0 12px black;
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+.title img {
+    width: 20vw;
+    filter: drop-shadow(0 0 12px black);
+    filter: drop-shadow(0 0 12px black);
+}
+
+.btn-default {
+    font-size: xxlarge;
+}
+
+.edu-info {
+    background-color: light grey;
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h2, h3, h4, h5, h6, p, div {
+    font-family: 'Rubik', sans-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Roboto Mono', monospace;
+}
