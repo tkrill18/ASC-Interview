@@ -4,15 +4,20 @@
     background-attachment: fixed;
 }
 
-body {
-    padding-top: 65px;
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .jumbotron {
-    background-color: transparent;
-    display: flex;
     align-items: center;
     text-align: center;
+}
+
+.clear {
+    background-color: transparent;
 }
 
 .title h1 {
@@ -32,9 +37,31 @@ body {
     font-size: xxlarge;
 }
 
-.edu-info {
-    background-color: light grey;
-    opacity: 0.5;
+
+.centering {
+    text-align: center;
+}
+
+.centering img {
+    margin: 0 auto;
+    max-height: 33%;
+}
+
+.centering:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.skill .progress,
+.skill h2 {
+    display: none;
+}
+
+.skill:hover .progress {
+  display: block;
+}
+
+.skill:hover h2 {
+  display: block;
 }
 
 h1 {

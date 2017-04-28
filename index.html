@@ -38,7 +38,7 @@
 	<div class="tab-content">
 
   		<div id="home" class="tab-pane fade in active">
-			<div class="jumbotron title">
+			<div class="jumbotron title clear">
 				<div class="container">
 					<h1>Thomas Krill</h1>
 					<img src="assets/tk-logo.svg" alt="TK">
@@ -47,42 +47,139 @@
   		</div>
 
 	  	<div id="about-me" class="tab-pane fade">
-			<div class="jumbotron">
+			<div class="jumbotron clear">
 		    	<div class="row">
 					<div class="col-sm-4 text-center">
 						<div class="container">
-							<type="button" class="btn btn-default btn-block" onclick="myFunction()">Education</button>
+							<type="button" class="btn btn-default btn-block" id="eduBtn">Education</button>
 						</div>
 					</div>
 					<div class="col-sm-4 text-center">
 						<div class="container">
-							<type="button" class="btn btn-default btn-block">Work Experience</button>
+							<type="button" class="btn btn-default btn-block" id="wrkBtn" >Work Experience</button>
 						</div>
 					</div>
 					<div class="col-sm-4 text-center">
 						<div class="container">
-							<type="button" class="btn btn-default btn-block">Activities</button>
+							<type="button" class="btn btn-default btn-block" id="actBtn">Activities</button>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="jumbotron">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 col-sm-6 text-center">
-						<div class="container edu">
-							<img src="assets/pr-logo.svg" class="img-responsive" alt="Pine-Richland High School">
+					<div class="col-lg-2">
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="jumbotron centering">
+							<img src="assets/pr-logo-alt.svg" class="img-responsive" alt="Pine-Richland High School" id="aboutMeImg1">
+							<p></p>
+							<p id="aboutMeTxt1">I attended Pine-Richland High School.</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 text-center">
-						<div class="container">
-							<type="button" class="btn btn-default btn-block">ND</button>
+					<div class="col-sm-6 col-lg-4">
+						<div class="jumbotron centering">
+							<img src="assets/nd-logo.svg" class="img-responsive" alt="University of Notre Dame" id="aboutMeImg2">
+							<p></p>
+							<p id="aboutMeTxt2">I currently attend the University of Notre Dame.</p>
 						</div>
+					</div>
+					<div class="col-lg-2">
 					</div>
 				</div>
 			</div>
 
 	  	</div>
+
+		<div id="tech-skills" class="tab-pane fade">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-xs-6">
+						<div class="jumbotron centering skill">
+							<img src="assets/py-logo.svg" class="img-responsive" alt="Python">
+							<h3></h3>
+							<div class="progress">
+							  	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+							    	75%
+							  	</div>
+							</div>
+							<h2>Python</h2>
+						</div>
+					</div>
+
+					<div class="col-sm-4 col-xs-6">
+						<div class="jumbotron centering skill">
+							<img src="assets/cpp-logo.svg" class="img-responsive" alt="C++">
+							<h3></h3>
+							<div class="progress">
+							  	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							    	80%
+							  	</div>
+							</div>
+							<h2>C++</h2>
+						</div>
+					</div>
+
+					<div class="visible-xs col-xs-12"> </div> <!-- Seperates rows in x-small view -->
+
+					<div class="col-sm-4 col-xs-6">
+						<div class="jumbotron centering skill">
+							<img src="assets/c-logo.svg" class="img-responsive" alt="C">
+							<h3></h3>
+							<div class="progress">
+							  	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+							    	65%
+							  	</div>
+							</div>
+							<h2>C</h2>
+						</div>
+					</div>
+
+					<div class="col-sm-12"> </div> <!-- Seperates rows in small & up views -->
+
+					<div class="col-sm-4 col-xs-6">
+						<div class="jumbotron centering skill">
+							<img src="assets/ml-logo.svg" class="img-responsive" alt="MATLAB">
+							<h3></h3>
+							<div class="progress">
+							  	<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							    	70%
+							  	</div>
+							</div>
+							<h2>MATLAB</h2>
+						</div>
+					</div>
+
+					<div class="visible-xs col-xs-12"> </div> <!-- Seperates rows in x-small view -->
+
+					<div class="col-sm-4 col-xs-6">
+						<div class="jumbotron centering skill">
+							<img src="assets/vb-logo.svg" class="img-responsive" alt="Visual Basic">
+							<h3></h3>
+							<div class="progress">
+							  	<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+							    	60%
+							  	</div>
+							</div>
+							<h2>Visual Basic</h2>
+						</div>
+					</div>
+
+					<div class="col-sm-4 col-xs-6">
+						<div class="jumbotron centering skill">
+							<img src="assets/html-logo.svg" class="img-responsive" alt="HTML">
+							<h3></h3>
+							<div class="progress">
+							  	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+							    	60%
+							  	</div>
+							</div>
+							<h2>HTML / CSS</h2>
+						</div>
+					</div>
+			</div>
+		</div>
 
 	</div>
 
