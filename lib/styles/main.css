@@ -33,10 +33,13 @@
     filter: drop-shadow(0 0 12px black);
 }
 
+.links {
+    background-color: white;
+}
+
 .btn-default {
     font-size: xxlarge;
 }
-
 
 .centering {
     text-align: center;
